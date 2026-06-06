@@ -1,6 +1,6 @@
 import logging
 import os
-import asyncpg
+import asyncpg2
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder, CommandHandler, CallbackQueryHandler,
