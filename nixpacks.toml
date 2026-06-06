@@ -1,2 +1,5 @@
 [phases.setup]
-nixPkgs = ["python311", "postgresql"]
+nixPkgs = ["python311", "gcc", "libpq"]
+
+[phases.install]
+cmds = ["pip install asyncpg==0.29.0 python-telegram-bot==20.7"]
