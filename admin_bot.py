@@ -7,8 +7,8 @@ from telegram.ext import (
     MessageHandler, filters, ContextTypes
 )
 
-ADMIN_TOKEN = "8961190632:AAHg59CEe1kcQdfQEI1Bni2PBjAi55XmmIo"
-SOFIA_TOKEN = "8988150778:AAE0U74b8WTdKf5OtmbiMFeSDoDm2BGGKzI"
+ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN")
+SOFIA_TOKEN = os.environ.get("SOFIA_TOKEN")
 ADMIN_ID = 944447597
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
